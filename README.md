@@ -27,7 +27,9 @@ NU Chess Game is an **offline**, two-player chess application built in Java usin
 - **[Ronald](https://github.com/ararrrr)** - Documenter
 
 ## 🏆 Sample Game Interface
-![Homepage of NU Chess](game-screenshot/game-ss-1.png)
-![Main Game of NU Chess](game-screenshot/game-ss-2.png)
+<p align="center">
+  <img src="game-screenshot/game-ss-1.png" width="45%" />
+  <img src="game-screenshot/game-ss-2.png" width="48%" />
+</p>
 
 > NOTE: Offline Chess Game is a school project developed purely for educational purposes. All code, designs, and features were built for learning and demonstration.
