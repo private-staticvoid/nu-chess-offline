@@ -30,25 +30,25 @@ public class Homepage {
 
     private void initComponents(JFrame frame) {
 
-        startButton = new JButton(new ImageIcon("C:\\Users\\Aki\\Java IJ IDE\\NuChess\\bstartt1.png"));
+        startButton = new JButton(new ImageIcon(getClass().getResource("/images/bstartt1.png")));
         startButton.setBounds(340, 510, BUTTON_WIDTH, BUTTON_HEIGHT);
         startButton.addActionListener(new StartButtonActionListener());
         startButton.setBorder(null);
         frame.add(startButton);
 
-        howToPlayButton = new JButton(new ImageIcon("C:\\Users\\Aki\\Java IJ IDE\\NuChess\\bhtp2.png"));
+        howToPlayButton = new JButton(new ImageIcon(getClass().getResource("/images/bhtp2.png")));
         howToPlayButton.setBounds(340, 590, BUTTON_WIDTH, BUTTON_HEIGHT);
         howToPlayButton.addActionListener(new HowToPlayButtonActionListener());
         howToPlayButton.setBorder(null);
         frame.add(howToPlayButton);
 
-        basicRulesButton = new JButton(new ImageIcon("C:\\Users\\Aki\\Java IJ IDE\\NuChess\\brules3.png"));
+        basicRulesButton = new JButton(new ImageIcon(getClass().getResource("/images/brules3.png")));
         basicRulesButton.setBounds(340, 670, BUTTON_WIDTH, BUTTON_HEIGHT);
         basicRulesButton.addActionListener(new BasicRulesButtonActionListener());
         basicRulesButton.setBorder(null);
         frame.add(basicRulesButton);
 
-        backgroundImage = new JLabel(new ImageIcon("C:\\Users\\Aki\\Java IJ IDE\\NuChess\\Homepage.png"));
+        backgroundImage = new JLabel(new ImageIcon(getClass().getResource("/images/Homepage.png")));
         backgroundImage.setBounds(0, 0, 1000, 800);
         frame.add(backgroundImage);
     }

@@ -27,13 +27,13 @@ public class BasicRules {
 
     private void initComponents(JFrame frame) {
 
-        backButton = new JButton(new ImageIcon("C:\\Users\\Aki\\Java IJ IDE\\NuChess\\bback.png"));
+        backButton = new JButton(new ImageIcon(getClass().getResource("/images/bback.png")));
         backButton.setBounds(340, 680, BUTTON_WIDTH, BUTTON_HEIGHT);
         backButton.addActionListener(new BackButtonActionListener());
         backButton.setBorder(null);
         frame.add(backButton);
 
-        backgroundImage = new JLabel(new ImageIcon("C:\\Users\\Aki\\Java IJ IDE\\NuChess\\BasicRules.png"));
+        backgroundImage = new JLabel(new ImageIcon(getClass().getResource("/images/BasicRules.png")));
         backgroundImage.setBounds(0, 0, 1000, 800);
         frame.add(backgroundImage);
     }
