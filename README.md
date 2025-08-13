@@ -21,10 +21,10 @@ NU Chess Game is an **offline**, two-player chess application built in Java usin
 - **Graphics**: Java 2D API
 
 ## 🧑‍💻 Team Members
-- **[Len](https://github.com/arkkali)** - Documenter
+- **[Iya](https://github.com/sophialeighahorro)** - Assets Designer
+- **[Marygail](https://github.com/mariiimiau)** - Assets Designer
 - **[Aisle](https://github.com/inthehallways)** - Programmer
 - **[Aki](https://github.com/private-staticvoid)** - Programmer
-- **[Ronald](https://github.com/ararrrr)** - Documenter
 
 ## 🏆 Sample Game Interface
 <p align="center">
