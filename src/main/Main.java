@@ -1,6 +1,7 @@
 package main;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class Main {
 
@@ -8,6 +9,17 @@ public class Main {
 //            getResource("res/chess.png"));
 
     public static void main(String[] args) {
+
+        try {
+            Font mcFont = Font.createFont(
+                    Font.TRUETYPE_FONT,
+                    Main.class.getResourceAsStream("/res/fonts/minecraft.ttf")
+            );
+            GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+            ge.registerFont(mcFont);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         JFrame window = new JFrame("Chessboard Offline");
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

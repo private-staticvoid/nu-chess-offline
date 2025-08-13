@@ -202,7 +202,7 @@ public class GamePanel extends JPanel implements Runnable {
             if (activeP == null) {
                 //If the activeP is null, check if you can pick up a piece
                 for (Piece piece : simPieces) {
-                    //If mouse is on ally piece, pick it up as the activeP
+                    //If mouse is on allay piece, pick it up as the activeP
                     if (piece.color == currentColor &&
                             piece.col == mouse.x / Board.SQUARE_SIZE &&
                             piece.row == mouse.y / Board.SQUARE_SIZE) {
@@ -250,10 +250,10 @@ public class GamePanel extends JPanel implements Runnable {
         validSquare = false;
 
         //Reset the piece list in every loop
-        //THis is BASICALY for restoring removed pieces during the simulation
+        //THis is BASICALLY for restoring removed pieces during the simulation
         copyPieces(pieces, simPieces);
 
-        //reset casling p location
+        //reset castling p location
         if (castlingP != null) {
             castlingP.col = castlingP.preCol;
             castlingP.x = castlingP.getX(castlingP.col);
@@ -661,7 +661,7 @@ public class GamePanel extends JPanel implements Runnable {
 
         //Status Message
         g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
-        g2.setFont(new Font("Minecraft", Font.PLAIN, 40));
+        g2.setFont(new Font("Minecraft", Font.PLAIN, 30));
         g2.setColor(new Color(255, 255, 255));
 
         if (promotion) {
@@ -705,7 +705,7 @@ public class GamePanel extends JPanel implements Runnable {
         if (stalemate){
             // Draw text message on top of the semi-transparent background
             g2.setFont(new Font("Minecraft", Font.BOLD, 90));
-            g2.setColor(Color.lightGray);
+            g2.setColor(Color.red);
             g2.drawString("Stalemate", 200, 320);
         }
 
