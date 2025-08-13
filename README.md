@@ -1,5 +1,7 @@
 # ♟️🐶 Offline NU Chess Game 
-NU Chess Game is an **offline**, two-player chess application built in Java using Swing. It enforces all standard chess rules. The game features smooth rendering, drag-and-drop piece movement, and visual indicators for turns and illegal moves.
+NU Chess Game is an **offline**, two-player chess application built in Java using Swing. It enforces all standard chess rules. The game features smooth rendering, drag-and-drop piece movement, and visual indicators for turns and illegal moves. 
+
+___**This project is developed as a university requirement for the course CCOBJPGL: Object-Oriented Programming.**___
 
 ## 🚀 Features
 - Local Two-Player Chess Gameplay
