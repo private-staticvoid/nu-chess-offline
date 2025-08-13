@@ -3,8 +3,6 @@ package main;
 import piece.*;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 import static main.Board.HALF_SQUARE_SIZE;
@@ -13,9 +11,6 @@ public class GamePanel extends JPanel implements Runnable {
 
     public static final int WIDTH = 1100;
     public static final int HEIGHT = 800;
-    private static  int gridwidth = 0;
-    private static int gridx = 0;
-    private static int gridy = 0;
     final int FPS = 60;
     Thread gameThread;
     Board board = new Board();
@@ -51,7 +46,7 @@ public class GamePanel extends JPanel implements Runnable {
         addMouseListener(mouse);
 
         setPieces();
-//        testPromotion();
+        //   testPromotion();
         //   testIllegal();
         copyPieces(pieces, simPieces);
 

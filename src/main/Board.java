@@ -2,7 +2,7 @@ package main;
 
 import java.awt.*;
 
-public class    Board {
+public class Board {
 
     final int MAX_COL = 8;
     final int MAX_ROW = 8;
